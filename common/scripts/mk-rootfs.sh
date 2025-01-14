@@ -131,6 +131,8 @@ build_yocto()
 			fi
 
 			if [ "$RK_CHIP_HAS_GPU" ]; then
+				echo "include include/glmark2.conf"
+
 				if [ "$RK_YOCTO_CHROMIUM" ]; then
 					echo "include include/browser.conf"
 				fi
