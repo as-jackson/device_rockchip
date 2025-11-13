@@ -18,6 +18,7 @@ config RK_ROOTFS_SYSTEM
 	string
 	default "buildroot" if RK_ROOTFS_SYSTEM_BUILDROOT
 	default "debian" if RK_ROOTFS_SYSTEM_DEBIAN
+	default "ubuntu" if RK_ROOTFS_SYSTEM_UBUNTU
 	default "yocto" if RK_ROOTFS_SYSTEM_YOCTO
 
 choice
