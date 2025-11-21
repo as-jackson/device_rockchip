@@ -91,8 +91,8 @@ do_build_extboot()
 	cp ${RK_SDK_DIR}/${RK_KERNEL_DTS_DIR}/uEnv/boot.cmd $EXTBOOT_DIR/
 	cp $EXTBOOT_DTB_DIR/${RK_KERNEL_DTS_NAME}.dtb $EXTBOOT_DIR/rk-kernel.dtb
 
-	if [[ -e ${RK_SDK_DIR}/armsom-initrd/initrd/$RK_KERNEL_ARCH/initrd-$KERNEL_MAIN_VER ]]; then
-		cp -v ${RK_SDK_DIR}/armsom-initrd/initrd/$RK_KERNEL_ARCH/initrd-$KERNEL_MAIN_VER $EXTBOOT_DIR/initrd-$KERNEL_MAIN_VER
+	if [[ -e ${RK_SDK_DIR}/armsom-initrd/$RK_KERNEL_ARCH/initrd-$KERNEL_MAIN_VER ]]; then
+		cp -v ${RK_SDK_DIR}/armsom-initrd/$RK_KERNEL_ARCH/initrd-$KERNEL_MAIN_VER $EXTBOOT_DIR/initrd-$KERNEL_MAIN_VER
 	fi
 
 	if [[ -e $EXTBOOT_DIR/boot.cmd ]]; then
